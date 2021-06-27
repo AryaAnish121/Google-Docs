@@ -62,20 +62,6 @@ passport.deserializeUser(function (id, done) {
   });
 });
 
-app.get('/', (req, res) => {
-  if (req.isAuthenticated()) {
-    res.send('authenticated');
-    console.log(req.user);
-  } else {
-    res.send('not authenticated');
-  }
-});
-
-app.get('/logout', (req, res) => {
-  req.logOut();
-  res.send('logout');
-});
-
 app.post('/isAuth', (req, res) => {
   if (req.isAuthenticated()) {
     res.send('yes');
