@@ -10,7 +10,7 @@ const saltRounds = 10;
 const bcrypt = require('bcrypt');
 const { v4 } = require('uuid');
 
-mongoose.connect(process.env.mongo, {
+mongoose.connect(process.env.MONGO, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
