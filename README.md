@@ -1,6 +1,6 @@
 # Google Docs
 
-This is a google docs clone width MERN stack. Hope you will like it
+This is a google docs clone created with MERN stack.
 
 ## Usage/Examples
 
